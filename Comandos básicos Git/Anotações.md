@@ -27,3 +27,10 @@ Este comando permite ver quais arquivos estão sendo “rastreados” pelo git e
 ### Git checkout
 
 É o comando utilizado para trocar de branch passando o nome da branch destino no final do comando. Caso a flag -b seja colocada após o “checkout” é possível criar a branch em questão e já trocar para esta imediatamente.
+
+# Como subir um projeto para o GitHub através do Git
+
+- Primeiro vá no github e crie seu repositório. Clique no símbolo de + no topo da tela e depois em New Repository. Preencha um nome e uma descrição para o projeto e clique em Create repository.
+- Navegue até a pasta do seu repositório e dentro dela use o comando git init, isso vai transformar a sua pasta em um projeto git (Não vai mudar nada).
+- Agora precisamos linkar seu projeto com o seu repositório no github, pra isso você vai usar o comando `git remote add origin https://github.com/user/repo.git.`
+- Pronto agora é só subir seus arquivos pro github. Use o comando `git add .` para adicionar todos os arquivos do projeto. Crie um _commit_ inicial `git commit -m "primeiro commit"` e depois dê o push `git push origin master`.
