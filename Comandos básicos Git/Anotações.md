@@ -32,5 +32,6 @@ Este comando permite ver quais arquivos estão sendo “rastreados” pelo git e
 
 - Primeiro vá no github e crie seu repositório. Clique no símbolo de + no topo da tela e depois em New Repository. Preencha um nome e uma descrição para o projeto e clique em Create repository.
 - Navegue até a pasta do seu repositório e dentro dela use o comando git init, isso vai transformar a sua pasta em um projeto git (Não vai mudar nada).
+- Faça a alteração local de Master para main utilizando o código `git branch -m master main`. (Geralmente o git irá criar o branch Master, porém atualizações recentes do GitHub alteraram para Main)
 - Agora precisamos linkar seu projeto com o seu repositório no github, pra isso você vai usar o comando `git remote add origin https://github.com/user/repo.git.`
-- Pronto agora é só subir seus arquivos pro github. Use o comando `git add .` para adicionar todos os arquivos do projeto. Crie um _commit_ inicial `git commit -m "primeiro commit"` e depois dê o push `git push origin master`.
+- Pronto agora é só subir seus arquivos pro github. Use o comando `git add .` para adicionar todos os arquivos do projeto. Crie um _commit_ inicial `git commit -m "primeiro commit"` e depois dê o push `git push origin main`.
